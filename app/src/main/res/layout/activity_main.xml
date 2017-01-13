@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xiao.indicator.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#33000000">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.xiao.indicator.widget.indicator.NumberIndicater
+            android:id="@+id/number_indicater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="10dp"
+            android:elevation="1dp"
+            app:circle_color="#fffdd63b"
+            app:circle_size="48dp"
+            app:number_size="14sp"/>
+    </FrameLayout>
+
+    <com.xiao.indicator.widget.indicator.PointIndicator
+        android:id="@+id/point_indicater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        app:normal_color="#ffcccccc"
+        app:point_size="8dp"
+        app:point_space="10dp"
+        app:select_color="#fffdd63b"/>
+</LinearLayout>
