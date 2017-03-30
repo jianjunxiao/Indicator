@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <com.xiao.indicator.widget.indicator.PointIndicator
+        android:id="@+id/point_indicater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        app:normal_color="#ffcccccc"
+        app:point_size="8dp"
+        app:point_space="10dp"
+        app:select_color="#fffdd63b"/>
+</LinearLayout>

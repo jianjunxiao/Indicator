@@ -88,6 +88,7 @@ public class PointIndicator extends View implements OnPageScrollListener {
                 size = specSize;
                 break;
             case MeasureSpec.AT_MOST:
+            case MeasureSpec.UNSPECIFIED:
                 size = mCount * mPointSize + (mCount - 1) * mPointSpace;
                 break;
         }
@@ -103,6 +104,7 @@ public class PointIndicator extends View implements OnPageScrollListener {
                 size = specSize;
                 break;
             case MeasureSpec.AT_MOST:
+            case MeasureSpec.UNSPECIFIED:
                 size = mPointSize;
                 break;
         }
