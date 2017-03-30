@@ -1,0 +1,3 @@
+# Indicator
+自定义ViewPager指示器
+两种样式：数字指示器NumberIndicator,圆点指示器PointIndicator
