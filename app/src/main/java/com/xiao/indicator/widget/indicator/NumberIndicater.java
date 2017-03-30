@@ -101,6 +101,7 @@ public class NumberIndicater extends View implements OnPageScrollListener {
                 size = specSize;
                 break;
             case MeasureSpec.AT_MOST:
+            case MeasureSpec.UNSPECIFIED:
                 size = mCircleSize;
                 break;
         }
